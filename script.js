@@ -51,7 +51,7 @@ document.getElementById('entrarBtn').addEventListener('click', async () => {
     const nomeFilme = objFilme.nome;
     //
     // Consultar a API OMDb usando o nome do filme
-    const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(nomeFilme)}&apikey=742a0ee`;
+    const apiUrl = `https://www.omdbapi.com/?t=${encodeURIComponent(nomeFilme)}&apikey=742a0ee`;
     const filmeResponse = await fetch(apiUrl);
     const dadosFilme = await filmeResponse.json();
 
