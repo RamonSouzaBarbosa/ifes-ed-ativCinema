@@ -19,7 +19,7 @@ async function filaClientesAdd(jsonPath) {
         fifoClientes.push(cliente.nome);
       });
   
-      //console.log('Fila Cliente inicializada:', fifoClientes);
+      console.log('Fila Cliente inicializada:', fifoClientes);
     } catch (error) {
       console.error('Erro ao carregar clientes:', error);
     }
